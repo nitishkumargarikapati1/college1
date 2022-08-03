@@ -1,0 +1,96 @@
+body{
+           
+    margin:0px;
+    padding:0px;
+}
+#signup{
+    width:250px;
+    height:300px;
+    
+    overflow: scroll;
+    margin: auto;
+    margin-top:5%;
+    border: solid cornsilk  3px;
+    border-radius:15px;
+    visibility: hidden;
+}
+h2{
+    text-align:center;
+    color:rgb(207, 24, 24);
+}
+label{
+    color:rgb(207, 24, 24);
+    font-weight: 300;
+}
+#login{
+    width:250px;
+    height:300px;
+    
+    overflow: scroll;
+    margin: auto;
+    margin-top:10%;
+    border: solid cornsilk  3px;
+    border-radius:15px;
+    
+    
+        }
+/* ok nexrt */
+body{
+    background-image:url("pexels-armin-rimoldi-5553045.jpg");
+
+}
+
+.section{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -14px;
+    margin-bottom: -9px;
+    padding: 21px 7px;
+    justify-content: space-between;
+
+}
+
+.nav {
+    min-height: 55px;
+    border: solid black 2px;
+    background-color: rgb(1, 1, 70);
+    border-radius: 20px;
+}
+
+.item {
+
+    list-style: none;
+    margin: 4px 61px;
+    padding: 2px 20px;
+    background-color: mintcream;
+    border: solid #039be5 2px;
+    border-radius: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    /* color: rgba(150, 17, 17, 0.795); */
+    /* padding: 8px 10px; */
+    border: solid white 2px;
+    /* background-color: rgb(170, 47, 201); */
+    border-radius: 18px;
+    
+
+
+}
+
+a:hover {
+    
+    color:black;
+    border: rgba(0, 0, 0, 0.822) 1px;
+    border-radius: 15px;
+}

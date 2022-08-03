@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssintro.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <nav class="nav">
+        <ul>
+            <li class="item"><a href="introduction1.html">Home</a></li>
+            <li class="item">
+                <a href="about.html" target="_blank">Aboutus</a>
+
+            </li>
+            <li class="item">
+                <a href="student.html" target="_blank">Student</a>
+            </li>
+            <li class="item">
+                <a href="library.html"target="_blank">Library_Info</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="college"><h1 style="text-align:center">COLLEGE IMAGES</h1></div>
+    <div class="ok">
+        <div class="container">
+            <div class="try"><div class="tag"><a class="prev" onclick="plusSlides(-1)">❮</a></div></div>
+            
+            <div class="slideimage fade">
+                <div class="img">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="college.jpg"   alt="">
+                    <div class="text">College Academic building</div>
+                </div>
+            </div>
+            <div class="slideimage fade">
+                <div class="img">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="hostel.jpg"   alt="">
+                    <div class="text">College Hostel</div>
+                </div>
+            </div>
+            <div class="slideimage fade">
+                <div class="img">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="library.jpg"  alt="">
+                    <div class="text">central library</div>
+                </div>
+            </div>
+            <div class="slideimage fade">
+                <div class="img">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="park.jpg"   alt="">
+                    <div class="text">college Park</div>
+                </div>
+               
+            </div>
+            <div class="try"><div class="tag"><a class="next" onclick="plusSlides(1)">❯</a></div></div>
+            
+            
+
+        </div>
+       
+        
+        
+    </div>
+    <br>
+    <div class="dots">
+        <span class="dot" onclick="pickfunction(1)"></span>
+        <span class="dot" onclick="pickfunction(2)"></span>
+        <span class="dot" onclick="pickfunction(3)"></span>
+        <span class="dot" onclick="pickfunction(4)"></span>
+
+    </div>
+
+
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function pickfunction(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slideimage");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</body>
+
+</html>

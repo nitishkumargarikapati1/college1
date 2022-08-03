@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studentlogin</title>
+    <link rel="stylesheet" href="./cssstudent.css">
+</head>
+<body>
+    <div class="section">
+        <nav class="nav">
+            <ul>
+                <li class="item"><a href="introduction1.html">Home</a></li>
+                <li class="item">
+                    <a href="about.html" target="_blank">Aboutus</a>
+    
+                </li>
+                <li class="item">
+                    <a href="student.html" target="_blank">Student</a>
+                </li>
+                <li class="item">
+                    <a href="library.html" target="_blank">Library_Info</a>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            function validation1(){
+                e.preventdefault();
+                var regx3=/^([a-zA-Z0-9\.,-]+)@([a-zA-Z0-9]+).([a-z]+)$/;
+                var username1=document.getElementById("username1").value;
+                var password1=document.getElementById("password1").value;
+                if(!regx3.test(username1)|| username1.trim()=="")
+                {
+                     window.alert("enter the username format");
+                     return false;
+     
+                }
+                else if(password1.trim()="")
+                {
+                    window.alert("enter the password")
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+             
+    
+             }
+            </script>
+    
+        <style>
+            .item1{
+                width:30%;
+                height:auto;
+                margin:2% 1%;
+                background-color: rgb(217, 240, 184);
+                padding:10px 10px;
+                border-radius: 2%;
+            }
+            .p{
+                border:green 2px;
+            }
+            .item3{
+                padding:2px;
+                margin:4px;
+
+            }
+            .container{
+                position:relative;
+            }
+
+        </style>
+            
+            </div>
+            <div id="login" style="text-align:center">
+                <form onsubmit=" return validation1()">
+                    <h2>Student Login Form</h2>
+                    <hr>
+                    <label for="username" ><h4>Username</h4></label>
+                    <input type="text"id="username1" placeholder="username" name="username" >
+                    <br>
+                    <br>
+                    <label for="password"><h4>Create Password</h4>
+                    </label> 
+                    <input type="password" id="password1" name="password" placeholder="password">
+                    <br><br>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+                
+            
+       
+</body>
+</html>
